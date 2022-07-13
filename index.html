@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        h1 {
+            color: #1a1a1a;
+        }
+        .myform {
+            display: grid;
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            gap: 10px;
+            min-height: 100vh;
+        }
+        
+        input {
+            
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 2px solid #FFD24C;
+            text-align: center;
+            cursor: pointer;
+            margin: 20px 10px;
+            width: 200px;
+        }
+
+        textarea:focus, input:focus {
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #92B4EC;
+            color: #FFE69A;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        form {
+            text-align: center;
+        }
+        ::-webkit-input-placeholder { /* Edge */
+                color: rgb(59, 59, 59);
+                
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: rgb(59, 59, 59);
+               
+        }
+
+        ::placeholder {
+                color: rgb(59, 59, 59); 
+        }
+    </style>
+    <section class="myform ">
+        <h1>My Calculator</h1>
+        <form action="/" method="post">
+            <input type="text" name="number1" placeholder="First Number">
+            <input type="text" name="number2" placeholder="Second Number">
+            <button type="submit" name="submit">Calculate</button>
+        </form> 
+    </section>
+    
+      
+</body>
+</html>
